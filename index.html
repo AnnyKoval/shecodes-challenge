@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Monoton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;700&display=swap" rel="stylesheet"><title>Kyiv, Ukraine</title>
+   
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Encode Sans', sans-serif;
+}
+
+html {
+background: radial-gradient(circle at 10% 20%, rgba(216, 241, 230, 0.46) 0.1%, rgba(233, 226, 226, 0.28) 90.1%);
+color: #233142;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style:circle;
+  line-height: 36px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+@media screen and (max-width: 900px) {
+  .container {
+  display: flex;
+  justify-items: flex-start;
+}
+}
+
+.divider {
+  width: 330px;
+  height: 1px;
+  margin: 0 auto;
+  background-color: #233142;
+}
+@media screen and (max-width: 900px) {
+  .divider {
+  display: none;
+}
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  padding: 0 100px;
+}
+@media screen and (max-width: 900px) {
+.header {
+width: 300px;
+margin-left: 0;
+padding: 10px;
+}
+}
+.header__left-block {
+  display: flex;
+  justify-content: space-between;
+  min-width: 550px;
+}
+@media screen and (max-width: 900px) {
+.header__left-block {
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0;
+}
+}
+@media screen and (max-width: 900px) {
+.header__links {
+margin: 0;
+}
+}
+.header__logo {
+  max-width: 170px;
+}
+@media screen and (max-width: 900px) {
+.header__logo {
+max-width: 70px;
+}
+}
+.header__logo img {
+  margin-top: 40px;
+  margin-left: 50px;
+  width: 50%;
+}
+@media screen and (max-width: 900px) {
+.header__logo img {
+width: 50%;
+margin: 95px 0 0 30px;
+}
+}
+
+.typing {
+  height: 18vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.typing-effect {
+  margin-top: 105px;
+  width: 12ch;
+  animation: typing 2s steps(15), effect 5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  text-align: center;
+  font-size: 4rem;
+  font-family: 'Cinzel Decorative', cursive;
+  color: #1A3453;
+  margin-bottom: 60px;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes effect {
+  50% {
+    border-color: transparent;
+  }
+}
+@media screen and (max-width: 900px) {
+.typing {
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+}
+}
+
+@media screen and (max-width: 900px) {
+.typing-effect {
+  margin-top: 200px;
+      font-size: 2rem;
+      animation: typing 2s steps(20), effect 5s step-start infinite alternate;
+      max-width: fit-content;
+}
+}
+.bgc_blue {
+  position: absolute;
+  right: 0;
+  top: -155px;
+  width: 43vw;
+  height: 968px;
+  background: rgba(146, 242, 255, 0.15);
+  z-index: -1;
+}
+@media screen and (max-width: 900px) {
+.bgc_blue {
+    display: none;
+}
+}
+.tabcontainer {
+  display: flex;
+  width: 1130px;
+  margin: 0 auto;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+@media screen and (max-width: 900px) {
+.tabcontainer {
+    width: 100%;
+    justify-content: center;
+    margin-left: 40px;
+    margin-top: 40px;
+    height: 300px;
+}
+}
+
+.tabcontent {
+  width: 850px;
+  position: relative;
+}
+.tabcontent img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.tabcontent__descr {
+  position: absolute;
+  top: 350px;
+  right: -260px;
+  width: 550px;
+  height: 359px;
+  background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  padding: 30px;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.7);
+  opacity: 0.8;
+  border-radius: 2%;
+}
+@media screen and (max-width: 900px) {
+.tabcontent__descr {
+   top: 320px;
+  left: 2px;
+  width: 400px;
+  font-size: 18px;
+  line-height: 26px;
+  height: 230px;
+  padding: 10px;
+  text-align: justify;
+}
+}
+.tabheader {
+  width: 280px;
+  padding: 35px 30px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+@media screen and (max-width: 900px) {
+.tabheader {
+  padding: 5px 20px;
+}
+}
+.tabheader h3 {
+  font-weight: 700;
+  font-size: 16px;
+}
+.tabheader__items {
+  margin-top: 35px;
+  padding-left: 26px;
+  border-left: 1px solid #000;
+}
+.tabheader__item {
+  font-weight: 700;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 10px;
+  color: 233142;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+@media screen and (max-width: 900px) {
+.tabheader__item {
+  font-size: 14px;
+}
+}
+.tabheader__item_active {
+  color: 233142;
+  font-size: 22px;
+  font-weight: 700;
+}
+@media screen and (max-width: 900px) {
+.tabheader__item_active {
+  font-size: 16px;
+}
+}
+.slogan {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 30px;
+}
+@media screen and (max-width: 900px) {
+.slogan {
+  display: none;
+}
+}
+.offer {
+  padding: 30px 0 100px 0;
+  position: relative;
+}
+@media screen and (max-width: 900px) {
+.offer {
+   width: 50%;
+   padding: 30px 0 10px 0;
+}
+}
+.offer .container {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 900px) {
+.offer .container {
+   max-width: fit-content;
+}
+}
+.offer .bgc_y {
+  position: absolute;
+  width: 1109px;
+  height: 980px;
+  background:rgb(253, 255, 165);
+  z-index: -1;
+  top: 50px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 900px) {
+.offer .bgc_y {
+top: 270px;
+width: fit-content;
+} 
+}
+.offer__text {
+  width: 580px;
+  margin-top: 100px;
+}
+@media screen and (max-width: 900px) {
+.offer__text {
+margin-top: 260px;
+text-align: justify;
+} 
+}
+@media screen and (max-width: 900px) {
+.offer__text .title {
+margin-left: 10px;
+width: 380px;
+text-align: center;
+} 
+}
+.offer__descr {
+  font-size: 22px;
+  margin-top: 30px;
+  font-weight: 300;
+  line-height: 36px;
+}
+@media screen and (max-width: 900px) {
+.offer__descr {
+font-size: 18px;
+  margin-top: 30px;
+  font-weight: 300;
+  line-height: 26px;
+  width: 100%;
+  margin-left: 10px;
+} 
+}
+.offer__action {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.offer__advantages {
+  width: 430px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 900px) {
+.offer__advantages {
+margin-top: 2px;
+padding: 2px;
+}
+}
+.offer__advantages h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+.offer__advantages h2 {
+  margin-left: 10px;
+width: 380px;
+margin-top:0;
+}
+}
+.offer__advantages h2:first-child {
+  margin-top: 70px;
+}
+@media screen and (max-width: 900px) {
+.offer__advantages h2:first-child {
+  margin-top: 20px;
+}
+}
+.offer__advantages-text {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 21px;
+  margin-left: 20px;
+}
+@media screen and (max-width: 900px) {
+ul {
+font-size: 18px;
+  margin-top: 30px;
+  font-weight: 300;
+  line-height: 26px;
+  width: 100%;
+  margin-left: 10px;
+} 
+}
+.offer__slider {
+  width: 650px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media screen and (max-width: 900px) {
+.offer__slider{
+display: none;
+}
+}
+.offer__slider-counter {
+  display: flex;
+  width: 180px;
+  align-items: center;
+  font-size: 24px;
+  color: 233142;
+}
+.offer__slider-wrapper {
+  width: 100%;
+  margin-top: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+}
+.offer__slider-prev {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.offer__slider-next {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.offer__slider #current {
+  font-size: 48px;
+  font-weight: 700;
+  color: 233142;
+}
+.offer__slide {
+  width: 100%;
+  height: 480px;
+  
+}
+.offer__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.visit {
+  padding: 40px 0 50px 0;
+}
+.visit .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 5px;
+}
+@media screen and (max-width: 900px) {
+.visit .container{
+display: block;
+margin-left: 40px;
+}
+}
+
+.visit .title {
+  text-align: center;
+  font-weight: bold;
+}
+.visit__field {
+  margin-top: 50px;
+  padding: 50px 0;
+  width: 100%;
+  background: radial-gradient(circle at 10% 20%, rgb(137, 210, 253) 0%, rgb(255, 241, 188) 90%);
+
+}
+
+.visit__item {
+  width: 320px;
+  min-height: 450px;
+  background: #fff;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  font-weight: 300;
+}
+.visit__item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.visit__item-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+.visit__item-descr {
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.footer {
+  min-height: 100px;
+  background-color: #303030;
+  padding: 10px 0;
+  color: #fff;
+}
+.footer .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer .subtitle {
+  font-size: 14px;
+}
+.footer .link {
+  display: block;
+  margin-top: 15px;
+  font-size: 10px;
+  color: #fff;
+}
+.footer .call {
+  text-align: right;
+}
+
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+</style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__left-block">
+        <div class="header__logo">
+          <img src="https://www.svgrepo.com/show/4247/chestnut.svg" alt="kyiv logo" />
+        </div>
+        <nav class="header__links">
+          <div class="typing">
+          <div class="typing-effect">
+            KYIV. UKRAINE
+          </div>
+        </div>
+        </nav>
+      </div>
+    
+    </header>
+
+    
+      <div class="bgc_blue"></div>
+      <div class="container">
+        <div class="tabcontainer">
+          <div class="tabcontent">
+            <img src="https://images.unsplash.com/photo-1639341267320-2d062b250c0d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=929&q=80" alt="kyiv" />
+            <div class="tabcontent__descr">
+             Kyiv is the capital and the largest city of Ukraine located on the Dnieper River, in the north of the central part of the country. It is Ukraine's most significant cultural, political, socio-economic, transport, scientific, and religious center. The city is the administrative center of the Kyiv region.
+            </div>
+          </div>
+          <div class="tabcontent">
+            <img src="https://images.unsplash.com/photo-1591994719351-273dbc03f137?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="history" />
+            <div class="tabcontent__descr">
+              Archaeological excavations show that settlements on the territory of the Kyiv region existed already 15,000-25,000 years ago. According to legend, Kyiv was founded by three brothers Kyi, Shchek, Khoryv, and their sister Lybid as the center of the Polyan tribe and named in honor of the older brother in the middle of the 5th century AD. 
+            </div>
+          </div>
+          <div class="tabcontent">
+            <img src="https://images.unsplash.com/photo-1617476566924-a00229e86447?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="kyiv img" />
+            <div class="tabcontent__descr">
+Kyiv is a large industrial center of Ukraine with enterprises in the light and food industry, printing, pharmaceuticals, engineering, metallurgy, and aircraft building. The services sector mainly contributes to the local economy - transport and communications, small and wholesale trade, real estate, legal and financial services.            </div>
+          </div>
+          <div class="tabcontent">
+            <img src="https://cdn.theatlantic.com/thumbor/wDUa99k-EDBa9FUllHKPz8Dn350=/1200x794/media/img/photo/2022/03/photos-ukraine-war/a01_AP22080389201974/original.jpg" alt="war" />
+            <div class="tabcontent__descr">
+              The battle of Kyiv was part of the Kyiv offensive in the 2022 Russian invasion of Ukraine for control of Kyiv, the capital city of Ukraine, and surrounding districts. The combatants were elements of the Russian Armed Forces and Ukrainian Ground Forces. The battle lasted from 25 February 2022 to 2 April 2022 and ended with the withdrawal of Russian forces.
+            </div>
+          </div>
+          <div class="tabheader">
+            
+            <div class="tabheader__items">
+              <div class="tabheader__item tabheader__item_active">Heart of Ukraine</div>
+              <div class="tabheader__item">History</div>
+              <div class="tabheader__item">Economics</div>
+              <div class="tabheader__item">Bravery</div>
+            </div>
+          </div>
+        </div>
+       
+          <div class="slogan">
+           Kyiv - the city where everything begins!</div>
+     
+    </div>
+
+
+    <div class="offer">
+      <div class="bgc_y"></div>
+      <div class="container">
+        <div class="offer__text">
+          <h2 class="title">Places of interest in Kyiv</h2>
+          <div class="offer__descr">
+          <p> Walk through the streets and visit the many small shops, restaurants, museums, and landmarks. The city has a population of three million, but in most neighborhoods, it retains its small-town vibe.</p> 
+           <br>
+           <p> Kyiv is a city rich in monuments of culture, architecture, and art. Dozens of museums and theaters are located here. The following are the most interesting sights.</p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="container">
+        <div class="offer__advantages">
+          <h2>Attractions</h2>
+          <div class="offer__advantages-text">
+            <ul>
+              <li>
+                St. Sophia's Cathedral
+              </li>
+              <li>
+                St. Andrew's Church
+              </li>
+              <li>
+                National Art Museum of Ukraine
+              </li>
+              <li>Kiev Pechersk Lavra Monastery
+              </li>
+              <li>
+                Mariyinsky Palace
+              </li>
+              <li>
+                 Independence Square
+              </li>
+              <li>
+                Mezhyhirya: Former Presidential Palace
+              </li>
+              <li>
+                 National Opera and Ballet of Ukraine
+              </li>
+              <li>
+                St. Volodymyr's Cathedral
+              </li>
+              <li>
+                 M.M. Gryshko National Botanical Garden
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="offer__slider">
+          <div class="offer__slider-counter">
+            <div class="offer__slider-prev">
+              ←
+            </div>
+            <span id="current">03</span>
+            /
+            <span id="total">04</span>
+            <div class="offer__slider-next">
+              →
+            </div>
+          </div>
+          <div class="offer__slider-wrapper">
+            <div class="offer__slider-inner">
+              <div class="offer__slide">
+                <img src="https://images.unsplash.com/photo-1561542320-9a18cd340469?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="sight1" />
+              </div>
+              <div class="offer__slide">
+                <img src="https://top10.travel/wp-content/uploads/2016/11/sofijskaya-ploshhad.jpg" alt="sight2" />
+              </div>
+              <div class="offer__slide">
+                <img src="https://images.unsplash.com/photo-1579032700753-0e8f37e5e861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8a3lpdnxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60" alt="sight3" />
+              </div>
+              <div class="offer__slide">
+                <img src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcSFwb75IxVUyUYGr3fL8Y2s5clAcmEuOZgh09FQIGj8TsHrX9RXcVypnj-rY3aTv5P1" alt="sight4" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="divider"></div>
+<div class="visit">
+        <h2 class="title">Must visit</h2>
+
+        <div class="visit__field">
+            <div class="container">
+                <div class="visit__item">
+                    <img src="https://images.unsplash.com/photo-1543298782-32907da49e94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="sight5">
+                    <h3 class="visit__item-subtitle">Kyiv Pechersk Lavra</h3>
+                    <div class="visit__item-descr">The oldest monastery of Rus, the main center of Russian Orthodoxy, is an object of world cultural heritage under the protection of UNESCO. The monastery was founded by the Monk Anthony of Caves as a cave monastery in 1051. The Great Lavra Bell Tower (96.5 meters, 374 steps), built-in 1731-1745.</div>
+                    <div class="visit__item-divider"></div>
+                   
+                </div>
+                <div class="visit__item">
+                    <img src="https://images.unsplash.com/photo-1545310751-fcdeb3a4981d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="sight6">
+                    <h3 class="visit__item-subtitle">National Museum of the History of Ukraine in the Second World War</h3>
+                    <div class="visit__item-descr">This grandiose memorial complex was built in 1981. The colossal 62-meter statue of the Motherland (102 meters with the pedestal), made of special stainless steel, is one of the symbols of Kyiv.
+</div>
+                    <div class="visit__item-divider"></div>
+                    
+                </div>
+                <div class="visit__item">
+                    <img src="https://images.unsplash.com/photo-1559588512-cae70b7dd3d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="sight7">
+                    <h3 class="visit__item-subtitle">Volodymyrska Hill Park</h3>
+                    <div class="visit__item-descr">Volodymyr The Great Monument (1853) - the oldest sculptural monument in Kyiv, one of the symbols of the city located in Volodymyrska Hill Park.  Also, you can enjoy a wonderful city view from cities hills.
+</div>
+                    <div class="visit__item-divider"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <footer class="footer">
+      <div class="container">
+        <div class="social">
+          <div class="subtitle">Official resources</div>
+          <a href="https://ukraine.ua/cities-places/kyiv/" class="link">Kyiv city info</a>
+          <a href="https://kmr.gov.ua/en" class="link">Kyiv city council</a>
+        </div>
+        <div class="heart">
+          <img src="https://img.icons8.com/cotton/2x/blue-yellow-heart.png" width="50" alt="Ukraine" />
+        </div>
+        <div class="credits">
+          <div class="subtitle">Credits</div>
+          <a href="https://www.theatlantic.com/photo/2022/03/photos-ukraine-war/627590/" class="link">Photocredit</a>
+          <a href="https://ukrainetrek.com/kiev-city" class="link">Infocredit</a>
+        </div>
+      </div>
+    </footer>
+
+    
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+  const tabs = document.querySelectorAll(".tabheader__item"), // Tabs functional
+    tabsContent = document.querySelectorAll(".tabcontent"),
+    tabsParent = document.querySelector(".tabheader__items");
+
+  function hideTabContent() {
+    tabsContent.forEach((item) => {
+      item.classList.add("hide");
+      item.classList.remove("show", "fade");
+    });
+
+    tabs.forEach((item) => {
+      item.classList.remove("tabheader__item_active");
+    });
+  }
+
+  function showTabContent(i = 0) {
+    tabsContent[i].classList.add("show", "fade");
+    tabsContent[i].classList.remove("hide");
+
+    tabs[i].classList.add("tabheader__item_active");
+  }
+  hideTabContent();
+  showTabContent();
+
+  tabsParent.addEventListener("click", (event) => {
+    const target = event.target;
+    if (target && target.classList.contains("tabheader__item")) {
+      tabs.forEach((item, i) => {
+        if (target == item) {
+
+          hideTabContent();
+          showTabContent(i);
+        }
+      });
+    }
+  });
+
+
+
+  // Slider
+
+  const slides = document.querySelectorAll(".offer__slide"),
+    slider = document.querySelector(".offer__slider"),
+    prev = document.querySelector(".offer__slider-prev"),
+    next = document.querySelector(".offer__slider-next"),
+    total = document.querySelector("#total"),
+    current = document.querySelector("#current"),
+    slidesWrapper = document.querySelector(".offer__slider-wrapper"),
+    slidesField = document.querySelector(".offer__slider-inner"),
+    width = window.getComputedStyle(slidesWrapper).width; 
+  let slideIndex = 1; 
+  let offset = 0; 
+
+  
+  if (slides.length < 10) {
+    total.textContent = `0${slides.length}`;
+    current.textContent = `0${slideIndex}`;
+  } else {
+    total.textContent = slides.length;
+    current.textContent = slideIndex;
+  }
+
+  slidesField.style.width = 100 * slides.length + "%"; 
+  slidesField.style.display = "flex"; 
+  slidesField.style.transition = "0.5s all";
+  slidesWrapper.style.overflow = "hidden"; 
+  slides.forEach((slide) => {
+    slide.style.width = width; 
+  });
+
+  slider.style.position = "relative"; 
+  const indicators = document.createElement("ol"),
+    dots = [];
+  indicators.classList.add("carousel-indicators");
+  indicators.style.cssText = ` position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;`;
+  slider.append(indicators);
+
+  for (let i = 0; i < slides.length; i++) {
+    const dot = document.createElement("li");
+    dot.setAttribute("data-slide-to", i + 1);
+    dot.style.cssText = `box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 40px;
+    height: 8px;
+    margin-right: 3px;
+    margin-left: 3px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;`;
+    if (i === 0) {
+      dot.style.opacity = 1; 
+    }
+    indicators.append(dot);
+    dots.push(dot);
+  }
+
+  function deleteNotDigits(str) {
+    return +str.replace(/\D/g, "");
+  }
+
+  next.addEventListener("click", () => {
+    if (offset === deleteNotDigits(width) * (slides.length - 1)) {
+     
+      offset = 0; 
+    } else {
+      
+      offset += deleteNotDigits(width); 
+    }
+    slidesField.style.transform = `translateX(-${offset}px)`; 
+    if (slideIndex === slides.length) {
+      slideIndex = 1; 
+    } else {
+      slideIndex++; 
+    }
+
+    if (slides.length < 10) {
+      current.textContent = `0${slideIndex}`;
+    } else {
+      current.textContent - slideIndex;
+    }
+    dots.forEach((dot) => (dot.style.opacity = "0.5")); 
+    dots[slideIndex - 1].style.opacity = 1;
+  });
+  prev.addEventListener("click", () => {
+    //кнопка назад:
+    if (offset == 0) {
+      offset = deleteNotDigits(width) * (slides.length - 1);
+    } else {
+      offset -= deleteNotDigits(width); 
+    }
+    slidesField.style.transform = `translateX(-${offset}px)`; 
+    if (slideIndex === 1) {
+      slideIndex = slides.length; 
+    } else {
+      slideIndex--; 
+    }
+
+    if (slides.length < 10) {
+      current.textContent = `0${slideIndex}`;
+    } else {
+      current.textContent - slideIndex;
+    }
+    dots.forEach((dot) => (dot.style.opacity = "0.5")); 
+    dots[slideIndex - 1].style.opacity = 1;
+  });
+  dots.forEach((dot) => {
+    dot.addEventListener("click", (e) => {
+      const slideTo = e.target.getAttribute("data-slide-to");
+
+      slideIndex = slideTo;
+      offset = deleteNotDigits(width) * (slideTo - 1);
+
+      slidesField.style.transform = `translateX(-${offset}px)`;
+
+      if (slides.length < 10) {
+        current.textContent = `0${slideIndex}`;
+      } else {
+        current.textContent = slideIndex;
+      }
+
+      dots.forEach((dot) => (dot.style.opacity = ".5")); 
+      dots[slideIndex - 1].style.opacity = 1;
+    });
+  });
+  
+});
+
+    </script>
+  </body>
+</html>
